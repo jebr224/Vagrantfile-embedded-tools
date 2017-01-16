@@ -23,7 +23,7 @@ if ! id -u jebr224 > /dev/null 2>&1 ; then
 	echo "jebr224 ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/jebr224
 
 	touch /home/jebr224/.hushlogin
-	mv /tmp/.bashrc /home/jebr224/
+	#mv /tmp/.bashrc /home/jebr224/
 	dos2unix /home/jebr224/.bashrc >/dev/null 2>&1
 	chown jebr224:jebr224 -R /home/jebr224/
 

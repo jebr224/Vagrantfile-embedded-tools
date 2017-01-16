@@ -2,7 +2,7 @@ VAGRANT_COMMAND = ARGV[0]
 
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "minimal/trusty64"
+  config.vm.box = "hashicorp/precise64"
   config.vm.hostname = "oven"
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
